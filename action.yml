@@ -1,9 +1,9 @@
-name: 'google-drive-upload-git-action'
-description: 'Upload files to Google Drive'
-author: 'Aditya Karnam Gururaj Rao'
+name: google-drive-upload-git-action-forked
+description: Upload files to Google Drive (forked from adityak74/google-drive-upload-git-action)
+author: 'BEES Group'
 branding:
-  icon: 'archive'
-  color: 'green'
+  icon: upload
+  color: yellow
 inputs:
   credentials:
     description: 'the service account credentials encoded in base64'
@@ -35,4 +35,4 @@ inputs:
 
 runs:
   using: docker
-  image: Dockerfile
+  image: docker://beesgroup/google-drive-upload-action
